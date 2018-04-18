@@ -1,0 +1,33 @@
+{
+  "name": "jwttutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "authenticate": "^0.1.5",
+    "bcrypt": "^1.0.3",
+    "connect": "^3.6.6",
+    "connect-mongo": "^2.0.1",
+    "connect-rest": "^3.0.10",
+    "cors": "^2.8.4",
+    "csurf": "^1.9.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.0.3",
+    "express3-handlebars": "^0.5.2",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.6",
+    "mongoose-transaction": "^0.0.3",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

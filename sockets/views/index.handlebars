@@ -1,0 +1,19 @@
+<h1>Communication with socket.io!</h1>
+<h2 id="connected"></h2>
+<button type="button" name="button" id="btn">Click Me</button>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://localhost:3000');
+
+  socket.on('message', function(message) {
+    alert('The server has a message for you. ' + message);
+    document.getElementById('connected').innerHTML = message;
+  });
+
+  document.getElementById('btn').onclick = function() {
+    console.log('Sending message to server');
+    socket.emit('message', 'Hi server how are you?');
+  };
+
+</script>
